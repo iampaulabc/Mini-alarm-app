@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    color:beige;
+}
+#clock {
+    font-size: 3em;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#alarms {
+    list-style-type: none;
+    padding: 8px;
+}
+#alarmLabel {
+    display: block;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.alarm-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-style: dotted;
+    margin-bottom: 5px;
+}
+
+.container {
+    border: 1px solid ;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    position: relative;
+  overflow: hidden;
+}
+
+.container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -3;
+  }
+
+.containerOf {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bi-alarm-text {
+    padding-right: 26rem;
+}
+
