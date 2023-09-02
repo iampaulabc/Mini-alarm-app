@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm Clock</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video autoplay loop muted>
+        <source src="miroshnichenko.mp4" type="video/mp4" />
+      </video>
+      <div id="clock">00:00:00</div>
+      <div class="containerOf">
+        <div>
+          <label for="hour">Hour:</label>
+          <input type="number" id="hour" min="1" max="12" value="12" />
+        </div>
+        <div>
+          <label for="minute">Minute:</label>
+          <input type="number" id="minute" min="0" max="59" value="59" />
+        </div>
+        <div>
+          <label for="second">Second:</label>
+          <input type="number" id="second" min="0" max="59" value="59" />
+        </div>
+        <div>
+          <label for="ampm">AM/PM:</label>
+          <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <button id="setAlarm">Set Alarm</button>
+      </div>
+      <label for="alarmLabel" id="alarmLabel">Alarms</label>
+      <ul id="alarms"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
